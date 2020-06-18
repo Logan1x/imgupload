@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>index page</h1>
+    <form action='upload' method='POST' enctype="multipart/form-data">
+
+        {% csrf_token %}
+        <ul>
+            <input type="file" name="image"> <br>
+            <input type="text" name="texttitle" placeholder="textbox"> <br>
+            <input type="submit" value="upload_file">
+        </ul>
+
+
+
+    </form>
+</body>
+
+</html>
